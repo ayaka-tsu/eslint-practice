@@ -1,13 +1,20 @@
 {
   "name": "eslint-practice",
   "version": "1.0.0",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint app.js",
     "fix": "eslint --fix app.js",
-    "format": "prettier --write app.js"
+    "format": "prettier --write app.js",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +24,7 @@
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.32.0",
-    "husky": "^9.1.7",
+    "husky": "^8.0.0",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.3"
   }
