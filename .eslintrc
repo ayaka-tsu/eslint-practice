@@ -1,0 +1,10 @@
+{
+    "env": {
+        "browser": true,//window, alart,document
+        "node": true//process
+    },
+    "extends":["airbnb-base"],
+    "rules":{
+        "semi":["error","always"]
+    }
+}
